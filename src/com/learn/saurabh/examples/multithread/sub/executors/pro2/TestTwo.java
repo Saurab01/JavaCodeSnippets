@@ -1,7 +1,7 @@
-package com.learn.saurabh.examples.multithread.extra;
+package com.learn.saurabh.examples.multithread.sub.executors.pro2;
 
 /**
- * Created by saurabhagrawal on 19/02/17.
+ * Created by saurabhagrawal on 07/03/17.
  */
 class TestTwo implements Runnable {
     public void run() {

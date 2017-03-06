@@ -1,4 +1,4 @@
-package com.learn.saurabh.examples.multithread.extra;
+package com.learn.saurabh.examples.multithread.sub.executors.pro2;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -7,7 +7,7 @@ import java.util.concurrent.Future;
 /**
  * Created by saurabhagrawal on 19/02/17.
  */
-public class ExecutorMain {
+class ExecutorMain {
     private static ExecutorService executor = null;
     private static volatile Future taskOneResults = null;
     private static volatile Future taskTwoResults = null;
@@ -30,7 +30,8 @@ public class ExecutorMain {
                 || taskOneResults.isDone()
                 || taskOneResults.isCancelled())
         {
-            taskOneResults = executor.submit(new TestOne());
+            taskOneResults = executor.submit(new TestOne());  //submit accepts runnable object as well and in
+            // previous example was accepting caalable object
         }
 
         if (taskTwoResults == null

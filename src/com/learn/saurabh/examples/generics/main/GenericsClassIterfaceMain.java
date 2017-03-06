@@ -44,7 +44,7 @@ public class GenericsClassIterfaceMain {
     }
 
     private void genericsinInterface() {
-        System.out.println("generics with interface");
+        System.out.println("generics with interfaces");
         DemoInterface demo=new DemoInterfaceImpl();
 
         System.out.println(demo.doSomeOperation("23"));
